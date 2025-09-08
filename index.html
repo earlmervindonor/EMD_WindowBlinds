@@ -6,29 +6,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
 </head>
 
 
 
+  
     <div class="icons" alt="icons">
     
-    <li><i class="fa-sharp fa-solid fa-phone "></i> 0936 728 0216 </li> 
+    <li><i class="fa-sharp fa-solid fa-phone "></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands  fa-whatsapp"></i> 0936 728 0216 </li> 
     <li><i class="fa-solid fa-envelope"></i> emd.windowblinds@gmail.com </li> 
     <li><i class="fa-brands fa-square-facebook"></i> EMD Window Blinds </li> 
     <li><i class="fa-brands fa-square-instagram"></i> emd.windowblinds </li> 
+    <li><i class="fa-brands fa-tiktok"></i> emd.windowblinds </li>
 
-     
+
     </div>
    
     <nav>
         <div  class="barmenu" alt="barmenu">
             <li><a href="index.html" class="home" style="font-weight: bolder;">HOME</a></li>
-            <li><a href="https://fliphtml5.com/ezljb/teos" target="_blank" >CATALOG</a></li>
+            <li><a href="catalog.html">CATALOG</a></li>
             <li><a href="product.html">PRODUCTS</a></li>
-            <li><a href="book.html">BOOK NOW</a></li>
+            <li><a href="book.html">BOOK</a></li>
             <li><a href="about.html">ABOUT</a></li>
         </div>
     </nav>
@@ -36,7 +38,6 @@
     <body>
         <div class="hero-bg">
             <section class="top">
-   
                 <header>
                     
                     <img src="blinds/luxury.png" style="max-width:800px">
@@ -93,6 +94,13 @@
     <img src="blinds/slider13.jpg" alt="Slide 10">
   </div>
 
+  <div class="mySlides fade">
+    <img src="blinds/slider14.jpg" alt="Slide 11">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="blinds/slider15.jpg" alt="Slide 12">
+  </div>
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -109,8 +117,11 @@
   <span class="dot" onclick="currentSlide(8)"></span>
   <span class="dot" onclick="currentSlide(9)"></span>
   <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+
 </div>
-  
+
   </section>
 
 
@@ -150,10 +161,9 @@ for (i = 0; i < slides.length; i++) {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(showSlides, 5000); 
 }
- 
-            </script>
+ </script>
 
             
         <section class="mid">
@@ -221,10 +231,4 @@ for (i = 0; i < slides.length; i++) {
     <a>© 2023 EMD Window blinds. All rights reserved</a> 
     </div>
 </div>
-
 </html>
-
-
-
-
-
