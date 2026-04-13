@@ -1,84 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="icon" type="image/png" href="blinds/FAVICON.png">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Return</title>
+    <title>Returns and Exchange Policy | EMD Window Blinds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .legal-section {
+            padding: 80px 0 100px;
+            background-color: var(--white);
+        }
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .legal-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--dark);
+        }
+        .policy-box {
+            margin-bottom: 40px;
+        }
+        .policy-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            display: block;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .policy-box p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .policy-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .policy-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            color: #555;
+        }
+        .policy-list li::before {
+            content: "•";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
 </head>
-
-    <div class="icons" alt="icons">
-    
-    <li><i class="fa-sharp fa-solid fa-phone "></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands  fa-whatsapp"></i> 0936 728 0216 </li> 
-    <li><i class="fa-solid fa-envelope"></i> emd.windowblinds@gmail.com </li> 
-    <li><i class="fa-brands fa-square-facebook"></i> EMD Window Blinds </li> 
-    <li><i class="fa-brands fa-square-instagram"></i> emd.windowblinds </li> 
-    <li><i class="fa-brands fa-tiktok"></i> emd.windowblinds </li>
-
-    </div>
-
-    <nav>
-        <div  class="barmenu" alt="barmenu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="catalog.html">CATALOG</a></li>
-            <li><a href="product.html">PRODUCTS</a></li>
-            <li><a href="book.html">BOOK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-
-        </div>
-    </nav>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-  
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
-    <div class="containers">
-    <div class="container1">
-        <a>Refund policy</a>
-        <p>
-            EMD Window Blinds places a high value on customer satisfaction, but please let us know if you are dissatisfied with our product.
-            <br>
-            Customized and ordered items, unfortunately, cannot be returned because they have already been customized for the specific customer and cannot be sold to others because they are not standard sizes. However, if EMD Window Blinds provides a free site visit and quotation to the customer or user, and if EMD Window Blinds personnel make measurement errors, the customer is entitled to a return policy. To be eligible for the warranty, please keep your item's receipt, which will be required by our staff to process your order.
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
+
+<div class="top-bar">
+    <div class="container flex-between">
+        <ul class="contact-info-list">
+            <li><i class="fa-solid fa-phone"></i> 0936 728 0216</li>
+            <li><i class="fa-solid fa-envelope"></i> <span class="hide-mobile">emd.windowblinds@gmail.com</span><span class="show-mobile">Email</span></li>
+        </ul>
+        <ul class="social-links-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100077254928515"><i class="fa-brands fa-facebook"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.instagram.com/emd.windowblinds?igsh=dXd2cGx3eDlhcmtj"><i class="fa-brands fa-instagram"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.tiktok.com/@emd.windowblinds.com/photo/7547132826609650951"><i class="fa-brands fa-tiktok"></i> <span class="handle"></span></a></li>
+        </ul>
+    </div>
 </div>
 
-</body>
-<div class="footcolor">
-    <div class="footer">
-        <hr>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li>|</li>
-        <li><a  href="terms.html">Terms and Conditions</a></li>
-        <li>|</li>
-        <li><a  href="return.html" class="return">Returns and Exchange Policy</a></li>
-    </div>
-        <div class="credits">
-        <a>© 2023 EMD Window Blinds. All rights reserved</a> 
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="blinds/luxury.png" alt="EMD Luxury" class="nav-logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="nav-links-list" id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="catalog.html">CATALOG</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <section class="legal-section">
+        <div class="container">
+            <div class="legal-container">
+                <div class="legal-header">
+                    <span class="badge">SATISFACTION GUARANTEE</span>
+                    <h2>Return Policy</h2>
+                    <hr class="gold-line" style="margin: 20px auto;">
+                </div>
+
+                <div class="policy-box">
+                    <h3>Customer Satisfaction</h3>
+                    <p>EMD Window Blinds places a high value on customer satisfaction. If you are dissatisfied with our product, please let us know so we can address your concerns.</p>
+                </div>
+
+                <div class="policy-box">
+                    <h3>Customized Items</h3>
+                    <p>Unfortunately, customized and ordered items cannot be returned. These products are specifically manufactured to your unique measurements and cannot be resold as standard sizes.</p>
+                </div>
+
+                <div class="policy-box">
+                    <h3>Eligibility for Return</h3>
+                    <p>A return or exchange policy is applicable under the following conditions:</p>
+                    <ul class="policy-list">
+                        <li>If EMD Window Blinds provided a site visit and our personnel made a measurement error.</li>
+                        <li>The customer must provide the original item receipt to process the claim.</li>
+                        <li>Claims must be filed within a reasonable timeframe following installation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="terms.html">Terms and Conditions</a>
+                <span>|</span>
+                <a href="return.html" style="color: var(--gold);">Returns and Exchange Policy</a>
+            </div>
+            <div class="credits">
+                <p>&copy; 2026 EMD WINDOW BLINDS. ALL RIGHTS RESERVED.</p> 
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        // Back to Top Logic
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Mobile Menu Script
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
 </html>
