@@ -1,214 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="icon" type="image/png" href="blinds/FAVICON.png">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Dual Shade Blinds | EMD Window Blinds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .product-header {
+            text-align: center;
+            padding: 80px 0 40px;
+        }
+        .product-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--dark);
+        }
+        .gallery-section {
+            padding-bottom: 80px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .sample-image-box {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .sample-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .service-card:hover .sample-image-box img {
+            transform: scale(1.05);
+        }
+        .status-badge {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gold);
+            font-weight: 600;
+            display: block;
+            margin-top: 5px;
+        }
+        .fabric-callout {
+            text-align: center;
+            background: var(--light-bg);
+            padding: 60px 0;
+            margin: 40px 0;
+        }
+    </style>
 </head>
+<body>
 
-  
-    <div class="icons" alt="icons">
-    
-    <li><i class="fa-sharp fa-solid fa-phone "></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands  fa-whatsapp"></i> 0936 728 0216 </li> 
-    <li><i class="fa-solid fa-envelope"></i> emd.windowblinds@gmail.com </li> 
-    <li><i class="fa-brands fa-square-facebook"></i> EMD Window Blinds </li> 
-    <li><i class="fa-brands fa-square-instagram"></i> emd.windowblinds </li> 
-    <li><i class="fa-brands fa-tiktok"></i> emd.windowblinds </li>
-
+<div class="top-bar">
+    <div class="container flex-between">
+        <ul class="contact-info-list">
+            <li><i class="fa-solid fa-phone"></i> 0936 728 0216</li>
+            <li><i class="fa-solid fa-envelope"></i> <span class="hide-mobile">emd.windowblinds@gmail.com</span><span class="show-mobile">Email</span></li>
+        </ul>
+        <ul class="social-links-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100077254928515"><i class="fa-brands fa-facebook"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.instagram.com/emd.windowblinds?igsh=dXd2cGx3eDlhcmtj"><i class="fa-brands fa-instagram"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.tiktok.com/@emd.windowblinds.com/photo/7547132826609650951"><i class="fa-brands fa-tiktok"></i> <span class="handle"></span></a></li>
+        </ul>
     </div>
- 
-    <nav>
-        <div  class="barmenu" alt="barmenu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="catalog.html">CATALOG</a></li>
-            <li><a href="product.html" class="product">PRODUCTS</a></li>
-            <li><a href="book.html">BOOK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+</div>
 
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="blinds/luxury.png" alt="EMD Luxury" class="nav-logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="nav-links-list" id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="catalog.html">CATALOG</a></li>
+                <li><a href="product.html" class="active">PRODUCTS</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
         </div>
     </nav>
 
-    <body>
-          
-                <h2>Dual Shade Blinds</h2>
-                <div class="container3">
-                    <p>Dual shade blinds are designed to provide maximum light filtering and stylish window coverings. They are appropriate for commercial spaces such as offices, restaurants, homes, and multi-story apartments. With the appearance of a horizontal blind and the ease of operation of a roller shade, this product can provide additional privacy.</p>
+    <header class="product-header">
+        <div class="container">
+            <span class="badge">MODERN COLLECTION</span>
+            <h2>Dual Shade Blinds</h2>
+            <p>Designed for maximum light filtering and style. Perfect for commercial spaces, restaurants, and homes. Offers the look of a horizontal blind with the ease of a roller shade.</p>
+            <hr class="gold-line" style="margin: 25px auto;">
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/basic4.jpg" alt="Sample 1"></div>
+                    <div class="service-text"><h3>Beige Basic</h3><span class="status-badge">Installation Sample</span></div>
                 </div>
-            <section class="productphoto">
-
-        <div class="card">
-            <img class="card-image" src="blinds/basic4.jpg">
-
-              <h3>Dual Shade Blinds Sample</h3>
-              <div class="description">
-                <p>Basic Fabric</p>
-                <p>Beige Color</p>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/basic3.jpg" alt="Sample 2"></div>
+                    <div class="service-text"><h3>Beige Basic</h3><span class="status-badge">Installation Sample</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/basic2.jpg" alt="Sample 3"></div>
+                    <div class="service-text"><h3>Beige Basic</h3><span class="status-badge">Installation Sample</span></div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img class="card-image" src="blinds/basic3.jpg">
-              
-              <h3>Dual Shade Blinds Sample</h3>
-              <div class="description">
-                <p>Basic Fabric</p>
-                <p>Beige Color</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-image" src="blinds/basic2.jpg">
-              
-              <h3>Dual Shade Blinds Sample</h3>
-              <div class="description">
-                <p>Basic Fabric</p>
-                <p>Beige Color</p>
-            </div>
-        </div>      
-        </section>
-        <section class="productphoto">
-
-        <div class="card">
-            <img class="card-image" src="blinds/basic1.jpg">
-            
-            <h3>Dual Shade Blinds Sample</h3>
-              <div class="description">
-                <p>Basic Fabric</p>
-                <p>Beige Color</p>
-            </div>
-      </div>  
     </section>
-    <br>
-    <br>
-    
-        <h2>Dual Shade Fabrics</h2>
-        <div class="container3">
-        <p>Different fabrics are used in the dual shaded blinds that are suitable to be installed in every window, such as in offices, restaurants, homes, and multi-story apartments.</p>
-       <br>
-        <p style="text-align:center">Looking for more? check the catalog for different color and shading options.</p>
+
+    <section class="fabric-callout">
+        <div class="container">
+            <span class="badge">FABRIC OPTIONS</span>
+            <h2 style="font-family: 'Playfair Display', serif; margin-top: 15px;">Shading & Texture</h2>
+            <p style="margin: 15px auto; max-width: 700px;">Different fabrics suitable for every window. Looking for more? Check the catalog for different color and shading options.</p>
         </div>
-        <section class="productphoto">
+    </section>
 
-            <div class="card">
-                <img class="card-image" src="blinds/basic6.jpg">
-    
-                  <h3>Basic Fabric Sample</h3>
-                  <div class="description">
-                    <p>Basic Fabric</p>
-                    <p>Close</p>
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/basic6.jpg" alt="Basic Fabric"></div>
+                    <div class="service-text"><h3>Basic Fabric</h3><span class="status-badge">Close State</span></div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-image" src="blinds/semiblackout.jpg">
-                  
-                  <h3>Semi-Blackout Fabric Sample</h3>
-                  <div class="description">
-                    <p>Semi-Blackout Fabric</p>
-                    <p>Close</p>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/semiblackout.jpg" alt="Semi-Blackout"></div>
+                    <div class="service-text"><h3>Semi-Blackout</h3><span class="status-badge">Close State</span></div>
                 </div>
-            </div>
-    
-            <div class="card">
-                <img class="card-image" src="blinds/trilogy.jpg">
-                  
-                  <h3>Trilogy Fabric Sample</h3>
-                  <div class="description">
-                    <p>Trilogy Fabric</p>
-                    <p>Close</p>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/trilogy.jpg" alt="Trilogy"></div>
+                    <div class="service-text"><h3>Trilogy Fabric</h3><span class="status-badge">Close State</span></div>
                 </div>
-            </div>      
-        </section>
-
-        <section class="productphoto">
-            <div class="card">
-                <img class="card-image" src="blinds/blackout.jpg">
-                
-                <h3>Blackout Fabric Sample</h3>
-                  <div class="description">
-                    <p>Blackout Fabric</p>
-                    <p>Close</p>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/blackout.jpg" alt="Blackout"></div>
+                    <div class="service-text"><h3>Blackout Fabric</h3><span class="status-badge">Close State</span></div>
                 </div>
-          </div>  
-
-        <div class="card">
-            <img class="card-image" src="blinds/basic5.jpg">
-
-              <h3>Basic Fabric Sample</h3>
-              <div class="description">
-                <p>Basic Fabric</p>
-                <p>Open</p>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/basic5.jpg" alt="Basic Open"></div>
+                    <div class="service-text"><h3>Basic Fabric</h3><span class="status-badge">Open State</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="sample-image-box"><img src="blinds/semiblackout1.jpg" alt="Semi-Blackout Open"></div>
+                    <div class="service-text"><h3>Semi-Blackout</h3><span class="status-badge">Open State</span></div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img class="card-image" src="blinds/semiblackout1.jpg">
-              
-              <h3>Semi-Blackout Fabric Sample</h3>
-              <div class="description">
-                <p>Semi-Blackout Fabric</p>
-                <p>Open</p>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="terms.html">Terms and Conditions</a>
+                <span>|</span>
+                <a href="return.html">Returns and Exchange Policy</a>
+            </div>
+            <div class="credits">
+                <p>&copy; 2026 EMD WINDOW BLINDS. ALL RIGHTS RESERVED.</p> 
             </div>
         </div>
-        </section>
+    </footer>
 
-        <section class="productphoto">
-        <div class="card">
-            <img class="card-image" src="blinds/trilogy1.jpg">
-              
-              <h3>Trilogy Fabric Sample</h3>
-              <div class="description">
-                <p>Trilogy Fabric</p>
-                <p>Open</p>
-            </div>
-        </div>      
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-        <div class="card">
-            <img class="card-image" src="blinds/blackout1.jpg">
-            
-            <h3>Blackout Fabric Sample</h3>
-              <div class="description">
-                <p>Blackout Fabric</p>
-                <p>Open</p>
-            </div>
-      </div>  
-      </section>
-     
-</section>
-    </body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-  
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
     </script>
-<div class="footcolor">
-    <div class="footer">
-        <hr>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li>|</li>
-        <li><a  href="terms.html">Terms and Conditions</a></li>
-        <li>|</li>
-        <li><a  href="return.html">Returns and Exchange Policy</a></li>
-    </div>
-        <div class="credits">
-        <a>© 2023 EMD Window Blinds. All rights reserved</a> 
-        </div>
-    </div>
+</body>
 </html>
