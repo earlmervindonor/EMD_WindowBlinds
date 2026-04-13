@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <link rel="icon" type="image/png" href="blinds/FAVICON.png">
+    <link rel="icon" type="image/png" href="blinds/FAVICON.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home | EMD Window Blinds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
+<body>
 
-
-
-  
-    <div class="icons" alt="icons">
-    
-    <li><i class="fa-sharp fa-solid fa-phone "></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands  fa-whatsapp"></i> 0936 728 0216 </li> 
-    <li><i class="fa-solid fa-envelope"></i> emd.windowblinds@gmail.com </li> 
-    <li><i class="fa-brands fa-square-facebook"></i> EMD Window Blinds </li> 
-    <li><i class="fa-brands fa-square-instagram"></i> emd.windowblinds </li> 
-    <li><i class="fa-brands fa-tiktok"></i> emd.windowblinds </li>
-
-
+<div class="top-bar">
+    <div class="container flex-between">
+        <ul class="contact-info-list">
+            <li><i class="fa-solid fa-phone"></i> 0936 728 0216</li>
+            <li><i class="fa-solid fa-envelope"></i> <span class="hide-mobile">emd.windowblinds@gmail.com</span><span class="show-mobile">Email</span></li>
+        </ul>
+        <ul class="social-links-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100077254928515"><i class="fa-brands fa-facebook"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.instagram.com/emd.windowblinds?igsh=dXd2cGx3eDlhcmtj"><i class="fa-brands fa-instagram"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.tiktok.com/@emd.windowblinds.com/photo/7547132826609650951"><i class="fa-brands fa-tiktok"></i> <span class="handle"></span></a></li>
+        </ul>
     </div>
-   
-    <nav>
-        <div  class="barmenu" alt="barmenu">
-            <li><a href="index.html" class="home" style="font-weight: bolder;">HOME</a></li>
-            <li><a href="catalog.html">CATALOG</a></li>
-            <li><a href="product.html">PRODUCTS</a></li>
-            <li><a href="book.html">BOOK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+</div>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="blinds/luxury.png" alt="EMD Luxury" class="nav-logo">
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links-list" id="nav-menu">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="catalog.html">CATALOG</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
         </div>
     </nav>
 
-    <body>
-        <div class="hero-bg">
-            <section class="top">
-                <header>
-                    
-                    <img src="blinds/luxury.png" style="max-width:800px">
-                </header>
-                <h1><span>Elegant</span>Luxurious</h1>
-                <p>Filter the light, minimizing glare and reflection while still allowing you to view outside and enjoy the scenery</p>
-            </section>
+    <header class="hero-bg">
+        <div class="hero-overlay">
+            <div class="container">
+               <div class="hero-text-box">
+    <h1><span>Elegant</span> Luxurious</h1>
+    <p>Filter the light, minimizing glare and reflection while still allowing you to view outside and enjoy the scenery</p>
+    
+    <div class="hero-btns">
+        <a href="product.html" class="btn-gold">View Products</a>
+        <a href="book.html" class="btn-gold">Book a Visit</a>
+    </div>
+</div>
+            </div>
         </div>
-        <section class="elegant">
-            <div class="right-col">
-                <h2>Let there be light without any glare</h2>
+    </header>
+
+    <section class="elegant section-padding">
+        <div class="container grid-split">
+            <div class="intro-content"> 
+                <span class="badge">PREMIUM QUALITY</span>
+                <h2>Let there be light <br>without any glare</h2>
+                <hr class="gold-line">
                 <p>Enhance the beauty of your home with a minimalist interior design and enjoy the daylight in your room without any strong glare. We at EMD Window Blinds, guarantee satisfactory products and experience.</p>
             </div>
           
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
+            <div class="slideshow-wrapper">
+                <div class="slideshow-container">
+                      <div class="mySlides fade">
     <img src="blinds/slider10.jpg" alt="Slide 1">
   </div>
 
@@ -101,134 +122,101 @@
   <div class="mySlides fade">
     <img src="blinds/slider15.jpg" alt="Slide 12">
   </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<div class="dots">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
-  <span class="dot" onclick="currentSlide(11)"></span>
-  <span class="dot" onclick="currentSlide(12)"></span>
-
-</div>
-
-  </section>
-
-
-            <script>
-                
-                var slideIndex = 1;
-showSlides(slideIndex);
-
-
-function plusSlides(n) {
-showSlides(slideIndex += n);
-}
-
-
-function currentSlide(n) {
-showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-let i;
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); 
-}
- </script>
-
-            
-        <section class="mid">
-            <div class="mid1">
-            <ul>    
+    <section class="services-bg section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <ul class="mid-grid">    
                 <li>
-                    <img src="blinds/visit.jpg" alt="visit" class="visit">
-                    <div class="=visit1">
-                        <p>Free site visit and quotation</p>
+                    <div class="service-card">
+                        <div class="icon-circle"><img src="blinds/visit.jpg" alt="visit"></div>
+                        <div class="service-text"><h3>Consultation</h3><p>Free site visit and quotation</p></div>
                     </div>
                 </li>
                 <li>
-                    <img src="blinds/install.jpg" alt="install" class="install">
-                    <div class="=install1">
-                        <p>Free installation</p>
+                    <div class="service-card">
+                        <div class="icon-circle"><img src="blinds/install.jpg" alt="install"></div>
+                        <div class="service-text"><h3>Installation</h3><p>Free installation</p></div>
                     </div>
                 </li>
                 <li>
-                    <img src="blinds/50.jpg" alt="payment" class="payment">
-                    <div class="=payment1">
-                        <p>50% down payment</p>
+                    <div class="service-card">
+                        <div class="icon-circle"><img src="blinds/50.jpg" alt="payment"></div>
+                        <div class="service-text"><h3>Payment</h3><p>50% down payment</p></div>
                     </div>
                 </li>
                 <li>
-                    <img src="blinds/4.jpg" alt="choices" class="choices">
-                    <div class="=choices1">
-                        <p>There are several choices</p>
+                    <div class="service-card">
+                        <div class="icon-circle"><img src="blinds/4.jpg" alt="choices"></div>
+                        <div class="service-text"><h3>Variety</h3><p>There are several choices</p></div>
                     </div>
                 </li>
             </ul>
-        </section>
-    </div>
-   
-</body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-  
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="terms.html">Terms and Conditions</a>
+                <span>|</span>
+                <a href="return.html">Returns and Exchange Policy</a>
+            </div>
+            <div class="credits">
+                <p>&copy; 2026 EMD WINDOW BLINDS. ALL RIGHTS RESERVED.</p> 
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n); }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+            slides[slideIndex-1].style.display = "block";
+        }
+
+        setInterval(function() { plusSlides(1); }, 5000);
+
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
     </script>
-    <div class="footcolor">
-<div class="footer">
-    <hr>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li>|</li>
-    <li><a  href="terms.html">Terms and Conditions</a></li>
-    <li>|</li>
-    <li><a  href="return.html">Returns and Exchange Policy</a></li>
-</div>
-    <div class="credits">
-    <a>© 2023 EMD Window blinds. All rights reserved</a> 
-    </div>
-</div>
+</body>
 </html>
