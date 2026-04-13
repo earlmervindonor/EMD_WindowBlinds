@@ -1,94 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="icon" type="image/png" href="blinds/FAVICON.png">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book now!</title>
+    <title>Book a Consultation | EMD Window Blinds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .booking-section {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+            min-height: 80vh;
+        }
+
+        .booking-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: var(--shadow);
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .booking-container h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .booking-container p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .booking-logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+
+        /* Form Styling */
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .booking-form input, 
+        .booking-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .booking-form input:focus, 
+        .booking-form textarea:focus {
+            border-color: var(--gold);
+        }
+
+        .booking-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: var(--dark);
+            color: #fff;
+            padding: 18px;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            background: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .booking-container { padding: 30px 20px; }
+            .booking-section { padding: 40px 0; }
+        }
+    </style>
 </head>
+<body>
 
-    <div class="icons" alt="icons">
-    
-    <li><i class="fa-sharp fa-solid fa-phone "></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands  fa-whatsapp"></i> 0936 728 0216 </li> 
-    <li><i class="fa-solid fa-envelope"></i> emd.windowblinds@gmail.com </li> 
-    <li><i class="fa-brands fa-square-facebook"></i> EMD Window Blinds </li> 
-    <li><i class="fa-brands fa-square-instagram"></i> emd.windowblinds </li> 
-    <li><i class="fa-brands fa-tiktok"></i> emd.windowblinds </li>
+<div class="top-bar">
+    <div class="container flex-between">
+        <ul class="contact-info-list">
+            <li><i class="fa-solid fa-phone"></i> 0936 728 0216</li>
+            <li><i class="fa-solid fa-envelope"></i> <span class="hide-mobile">emd.windowblinds@gmail.com</span><span class="show-mobile">Email</span></li>
+        </ul>
+        <ul class="social-links-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100077254928515"><i class="fa-brands fa-facebook"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.instagram.com/emd.windowblinds?igsh=dXd2cGx3eDlhcmtj"><i class="fa-brands fa-instagram"></i> <span class="handle"></span></a></li>
+            <li><a href="https://www.tiktok.com/@emd.windowblinds.com/photo/7547132826609650951"><i class="fa-brands fa-tiktok"></i> <span class="handle"></span></a></li>
+        </ul>
+    </div>
+</div>
 
-
-    </div>  
-
-    <nav>
-        <div  class="barmenu" alt="barmenu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="catalog.html">CATALOG</a></li>
-            <li><a href="product.html">PRODUCTS</a></li>
-            <li><a href="book.html" class="book" style="font-weight: bolder;">BOOK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="blinds/luxury.png" alt="EMD Luxury" class="nav-logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="nav-links-list" id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="catalog.html">CATALOG</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="book.html" class="active">BOOK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
         </div>
     </nav>
 
-    <body>
-          <section>
-        <h2>Book now!</h2>
-        <div class="favicon1"  style="max-width:600px">
-            <img class="images" src="blinds/luxury.png" >
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <img src="blinds/luxury.png" alt="EMD Logo" class="booking-logo">
+                <h2>Book a Free Visit</h2>
+                <p>Please fill out the form below for a free site visit and quotation. We will contact you shortly.</p>
+                
+                <form action="https://formspree.io/f/mknaawee" method="POST" class="booking-form">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <input type="text" name="Number" placeholder="Contact Number" required>
+                    <textarea name="Message" placeholder="Input your landmark and specific location for a free site visit here." required></textarea>
+                    <button type="submit" class="submit-btn">Send Request</button>
+                </form>
+            </div>
         </div>
     </section>
-        <form action=https://formspree.io/f/mknaawee method="POST" class="inputs">
-     
-            <input type="text" name="Name" placeholder="Full Name" required style="text-align: center;">
-            <br>
-            <br>
-            <input type="email" name="Email" placeholder="Email" required style="text-align: center;">
-            <br>
-            <br>
-            <input type="text" name="Number" placeholder="Number" required style="text-align: center;">
-            <br>
-            <br>
-            <textarea name="Message" placeholder="Input your landmark and specific location for a free site visit here." required></textarea>
-            <br>
-            <br>
-            <button type="submit">Send</button>
-        </form>
 
-</body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-  
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="terms.html">Terms and Conditions</a>
+                <span>|</span>
+                <a href="return.html">Returns and Exchange Policy</a>
+            </div>
+            <div class="credits">
+                <p>&copy; 2026 EMD WINDOW BLINDS - CEBU. ALL RIGHTS RESERVED.</p> 
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        // Back to Top Logic
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Mobile Menu Script
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
     </script>
-<div class="footcolor">
-<div class="footer">
-<hr>
-<li><a href="privacy.html">Privacy Policy</a></li>
-<li>|</li>
-<li><a  href="terms.html">Terms and Conditions</a></li>
-<li>|</li>
-<li><a  href="return.html">Returns and Exchange Policy</a></li>
-</div>
-<div class="credits">
-<a>© 2023 EMD Window Blinds - Cebu. All rights reserved</a> 
-</div>
-</div>
+</body>
 </html>
