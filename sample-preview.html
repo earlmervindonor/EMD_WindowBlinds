@@ -6,28 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | EMD Window Blinds</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <style>
-         .product-header {
+        .product-header {
             text-align: center;
             padding: 80px 0 40px;
         }
+
         .product-header h2 {
             font-family: 'Playfair Display', serif;
             font-size: 3.5rem;
             color: var(--dark);
         }
+
         .gallery-section {
             padding-bottom: 80px;
         }
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
+
         .sample-image-box {
             width: 100%;
             height: 300px;
@@ -36,48 +41,50 @@
             margin-bottom: 15px;
             cursor: pointer;
         }
+
         .sample-image-box img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: 0.3s ease;
+            transition: var(--transition);
         }
+
         .service-card:hover .sample-image-box img {
             transform: scale(1.05);
         }
 
-        /* ===== LIGHTBOX STYLES ===== */
-        .modal {
+        /* ===== IMAGE LIGHTBOX ===== */
+        .img-modal {
             display: none;
             position: fixed;
-            z-index: 999;
-            padding-top: 60px;
+            z-index: 9999;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.9);
+            background: rgba(0,0,0,0.9);
         }
 
-        .modal-content {
-            margin: auto;
+        .img-modal img {
             display: block;
             max-width: 90%;
-            max-height: 80%;
-            animation: zoom 0.3s;
+            max-height: 85%;
+            margin: auto;
+            margin-top: 60px;
+            animation: zoomIn 0.25s ease;
         }
 
-        @keyframes zoom {
+        @keyframes zoomIn {
             from {transform: scale(0.7);}
             to {transform: scale(1);}
         }
 
-        .close {
+        .img-modal span {
             position: absolute;
             top: 20px;
-            right: 40px;
-            color: white;
+            right: 35px;
             font-size: 40px;
+            color: white;
             cursor: pointer;
         }
     </style>
@@ -85,7 +92,48 @@
 
 <body>
 
-<!-- GALLERY -->
+<div class="top-bar">
+    <div class="container flex-between">
+        <ul class="contact-info-list">
+            <li><i class="fa-solid fa-phone"></i> 0936 728 0216</li>
+            <li><i class="fa-solid fa-envelope"></i>
+                <span class="hide-mobile">emd.windowblinds@gmail.com</span>
+                <span class="show-mobile">Email</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="blinds/luxury.png" alt="EMD Luxury" class="nav-logo">
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+
+        <ul class="nav-links-list" id="nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="catalog.html">CATALOG</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="sample-preview.html" class="active">SAMPLES</a></li>
+            <li><a href="book.html">BOOK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="product-header">
+    <div class="container">
+        <span class="badge">ELEGANT COLLECTIONS</span>
+        <h2>Elegant Samples</h2>
+        <p>Available only in EMD Window Blinds</p>
+        <hr class="gold-line" style="margin: 25px auto;">
+    </div>
+</header>
+
 <section class="gallery-section">
     <div class="container">
         <div class="gallery-grid">
@@ -95,88 +143,74 @@
             <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-3.jpg"></div></div>
             <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-4.jpg"></div></div>
             <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-5.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-6.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-7.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-8.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-9.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-10.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-11.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-12.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-13.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-14.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-15.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-16.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-17.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-18.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/ivory-19.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/natural-basic-1.jpg"></div></div>
-            <div class="service-card"><div class="sample-image-box"><img src="blinds/natural-basic-2.jpg"></div></div>
-            
 
         </div>
     </div>
 </section>
 
-<!-- ===== LIGHTBOX ===== -->
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
+<!-- LIGHTBOX -->
+<div id="imgModal" class="img-modal">
+    <span id="closeModal">&times;</span>
+    <img id="modalImage">
 </div>
 
-<!-- FOOTER -->
 <footer class="main-footer">
     <div class="container footer-content">
-        <p>&copy; 2026 EMD WINDOW BLINDS</p>
+        <p>&copy; 2026 EMD WINDOW BLINDS. ALL RIGHTS RESERVED.</p>
     </div>
 </footer>
 
-<!-- SCRIPTS -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
 <script>
-    // Lightbox
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-    const closeBtn = document.querySelector(".close");
+    // BACK TO TOP
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "flex";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // MOBILE MENU
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+
+    // ===== IMAGE LIGHTBOX =====
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeModal = document.getElementById("closeModal");
 
     const images = document.querySelectorAll(".sample-image-box img");
 
     images.forEach(img => {
-        img.addEventListener("click", function() {
+        img.addEventListener("click", function () {
             modal.style.display = "block";
             modalImg.src = this.src;
         });
     });
 
-    closeBtn.onclick = function() {
+    closeModal.onclick = function () {
         modal.style.display = "none";
     };
 
-    modal.onclick = function(e) {
+    modal.onclick = function (e) {
         if (e.target === modal) {
             modal.style.display = "none";
         }
     };
-
-    // Mobile menu (kept from yours)
-    const menuToggle = document.getElementById('mobile-menu');
-    const navMenu = document.getElementById('nav-menu');
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    }
-
-    // Back to top
-    let mybutton = document.getElementById("myBtn");
-    window.onscroll = function() {
-        if (mybutton && (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)) {
-            mybutton.style.display = "flex";
-        } else if (mybutton) {
-            mybutton.style.display = "none";
-        }
-    };
-    function topFunction() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
 </script>
 
 </body>
